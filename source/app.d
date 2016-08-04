@@ -1,23 +1,17 @@
-import std.stdio;
-import std.conv;
-
-
 
 extern(C)
 {
-  bool foo(const int guess)
+  bool fastBlank(const char* value)
   {
-    foreach(i ; 0..5)
-    { 
-      if(i % 2 == 0)
-      {
-        writeln("Even");
-      } else {
-        writeln("Odd");
-      }
-    }
+    import std.conv;
+    import std.string;
 
-    return guess == 5 ? true : false;
+    auto str = to!string(value);
+    if(str == "" || strip(str) == "") {
+      return true;
+    } 
+
+    return false;
   }
 }
 

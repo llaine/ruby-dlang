@@ -5,7 +5,8 @@ module D
   ffi_lib "./libhelloworld.so"
   attach_function :rt_init, :rt_init, [], :int
   attach_function :rt_term, :rt_term, [], :int
-  attach_function :foo, [:int], :void
+
+  attach_function :fast_blank, :fastBlank, [:string], :bool
 end
 
 D.rt_init
