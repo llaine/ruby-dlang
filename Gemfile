@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
 
-
-gem 'dl'
 gem 'ffi'
+gem 'benchmark-ips'

@@ -2,6 +2,8 @@
 *.o
 *.obj
 
+.idea
+
 # Compiled Dynamic libraries
 *.so
 *.dylib

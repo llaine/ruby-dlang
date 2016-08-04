@@ -1,16 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    dl (1.2.4)
-      trollop
+    benchmark-ips (2.6.1)
     ffi (1.9.14)
-    trollop (2.1.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  dl
+  benchmark-ips
   ffi
 
 BUNDLED WITH

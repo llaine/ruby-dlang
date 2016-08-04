@@ -2,7 +2,7 @@ require 'ffi'
 
 module D
   extend FFI::Library
-  ffi_lib "./libhelloworld.so"
+  ffi_lib './libhelloworld.so'
   attach_function :rt_init, :rt_init, [], :int
   attach_function :rt_term, :rt_term, [], :int
 
