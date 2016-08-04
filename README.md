@@ -1,39 +1,28 @@
 # ruby-dlang
 
-Creating Ruby extensions using D 
-
-
-# How to 
-```
-# Fetching ruby deps
-$ bundle install
-# Compiling D app
-$ dub
-$ ruby user.rb
-```
-
-
 # Fast blank example
 
 Comparison between `blank` from ActiveRecord 
 and the raw D one. 
 
-- Ruby code located in `app.rb`
+- Ruby code located in `d.rb`
 - benchmark located in `benchmark.rb`
 - D code located in source folder
+
+D application has been compiled using `dub build --build=release`
 
 ### Results
 
 ```
 Warming up --------------------------------------
-        fast_blank D   144.295k i/100ms
-     fast_blank Ruby   176.332k i/100ms
+            blank? D   174.206k i/100ms
+         blank? Ruby   176.620k i/100ms
 Calculating -------------------------------------
-        fast_blank D      2.501M (± 1.3%) i/s -     12.554M in   5.021058s
-     fast_blank Ruby      2.773M (± 0.8%) i/s -     13.930M in   5.023734s
+            blank? D      2.790M (± 1.5%) i/s -     14.111M in   5.059450s
+         blank? Ruby      2.698M (± 1.4%) i/s -     13.600M in   5.041477s
 
 Comparison:
-     fast_blank Ruby:  2773053.9 i/s
-        fast_blank D:  2500605.5 i/s - 1.11x slower
+            blank? D:  2789669.1 i/s
+         blank? Ruby:  2698155.7 i/s - 1.03x slower
 ```
 
