@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    dl (1.2.4)
+      trollop
+    ffi (1.9.14)
+    trollop (2.1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dl
+  ffi
+
+BUNDLED WITH
+   1.12.5

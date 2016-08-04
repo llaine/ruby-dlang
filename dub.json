@@ -1,0 +1,10 @@
+{
+	"name": "helloworld",
+	"authors": [
+		"Louis Lainé"
+	],
+	"description": "A minimal D application.",
+	"copyright": "Copyright © 2016, Louis Lainé",
+	"license": "mit",
+  "targetType": "dynamicLibrary"
+}
