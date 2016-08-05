@@ -1,7 +1,6 @@
 require 'ffi'
 require './d'
 
+d = D.users('Test', 'test')
 
-result = D.users('Test', 'test')
-
-puts result.toto
+puts d[:results][1][:a]

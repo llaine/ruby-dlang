@@ -5,6 +5,9 @@
 	],
 	"description": "A minimal D application.",
 	"copyright": "Copyright © 2016, Louis Lainé",
-	"license": "mit",
-  "targetType": "dynamicLibrary"
+	"license": "MIT",
+  "targetType": "dynamicLibrary",
+  "dependencies": {
+    "ddb": "~>0.2.4"
+  }
 }
